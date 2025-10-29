@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import {
   Box,
-  Button,
+  // Button removed (unused)
   FormControl,
   FormLabel,
   Input,
@@ -32,7 +32,7 @@ function LoginPage() {
     e.preventDefault();
     try {
       // 4. Call the context login function
-      const { success, message } = await login(email, password);
+  const { success } = await login(email, password);
 
       if (success) {
         // The success toast is now handled in the AuthContext

@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import {
   Box,
-  Button,
   FormControl,
   FormLabel,
   Input,
@@ -37,7 +36,7 @@ function RegisterPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post(
+      await axios.post(
         'https://devhub-hackathon-management-website.onrender.com/api/auth/register',
         formData
       );

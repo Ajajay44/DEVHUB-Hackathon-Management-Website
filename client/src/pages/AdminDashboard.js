@@ -36,7 +36,7 @@ import {
   SimpleGrid,
 } from '@chakra-ui/react';
 import { FaProjectDiagram, FaUsers, FaShieldAlt, FaEye, FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
-import { useAuth } from '../context/AuthContext';
+// removed unused useAuth import
 import axios from 'axios';
 import { motion } from 'framer-motion';
 import GlowingCard from '../components/GlowingCard';

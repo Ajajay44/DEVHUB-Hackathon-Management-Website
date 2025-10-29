@@ -9,7 +9,7 @@ import {
   Text,
   Icon,
   Progress,
-  Button,
+  // Button removed (unused)
 } from '@chakra-ui/react';
 import { Link as ReactRouterLink } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
