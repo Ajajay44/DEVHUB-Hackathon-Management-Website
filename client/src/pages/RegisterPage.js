@@ -38,7 +38,7 @@ function RegisterPage() {
     e.preventDefault();
     try {
       const res = await axios.post(
-        'http://localhost:5000/api/auth/register',
+        'https://devhub-hackathon-management-website.onrender.com/api/auth/register',
         formData
       );
       toast({

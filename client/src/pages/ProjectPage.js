@@ -52,7 +52,7 @@ function ProjectPage() {
       }
       // If on a team, try to get their project
       try {
-        const res = await axios.get('http://localhost:5000/api/projects/my-project');
+  const res = await axios.get('https://devhub-hackathon-management-website.onrender.com/api/projects/my-project');
         // If a project exists, pre-fill the form
         setFormData({
           title: res.data.title,
@@ -81,7 +81,7 @@ function ProjectPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/projects/submit', formData);
+  const res = await axios.post('https://devhub-hackathon-management-website.onrender.com/api/projects/submit', formData);
       toast({
         title: 'Project Saved!',
         description: res.data.msg, // "Project submitted" or "Project updated"

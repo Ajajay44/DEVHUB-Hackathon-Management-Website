@@ -48,8 +48,8 @@ function TeamPage() {
   // Function to fetch the user's current team
   const fetchTeam = async () => {
     try {
-      // Axios already has our token, thanks to AuthContext
-      const res = await axios.get('http://localhost:5000/api/teams/my-team');
+  // Axios already has our token, thanks to AuthContext
+  const res = await axios.get('https://devhub-hackathon-management-website.onrender.com/api/teams/my-team');
       setTeam(res.data); // Save the team data in state
     } catch (err) {
       if (err.response.status !== 404) {
@@ -70,7 +70,7 @@ function TeamPage() {
   const handleCreateTeam = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/teams/create', { teamName });
+  const res = await axios.post('https://devhub-hackathon-management-website.onrender.com/api/teams/create', { teamName });
       setTeam(res.data.team); // Update state with the new team
       toast({
         title: 'Team Created!',
@@ -94,7 +94,7 @@ function TeamPage() {
   const handleJoinTeam = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/teams/join', { invitationCode });
+  const res = await axios.post('https://devhub-hackathon-management-website.onrender.com/api/teams/join', { invitationCode });
       setTeam(res.data.team); // Update state with the joined team
       toast({
         title: 'Joined Team!',

@@ -21,7 +21,7 @@ export const AuthProvider = ({ children }) => {
         axios.defaults.headers.common['x-auth-token'] = token;
         try {
           // Fetch user data using the protected /me route
-          const res = await axios.get('http://localhost:5000/api/auth/me');
+          const res = await axios.get('https://devhub-hackathon-management-website.onrender.com/api/auth/me');
           setUser(res.data);
           setIsAuthenticated(true);
         } catch (err) {
@@ -41,7 +41,7 @@ export const AuthProvider = ({ children }) => {
   // 3. Login Function
   const login = async (email, password) => {
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/login', {
+      const res = await axios.post('https://devhub-hackathon-management-website.onrender.com/api/auth/login', {
         email,
         password,
       });

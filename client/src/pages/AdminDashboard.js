@@ -63,12 +63,12 @@ function AdminDashboard() {
     const fetchData = async () => {
       try {
         setLoading(true);
-        // 2. Fetch all projects
-        const projectRes = await axios.get('http://localhost:5000/api/admin/all-projects');
+  // 2. Fetch all projects
+  const projectRes = await axios.get('https://devhub-hackathon-management-website.onrender.com/api/admin/all-projects');
         setProjects(projectRes.data);
 
         // 3. Fetch all users
-        const userRes = await axios.get('http://localhost:5000/api/admin/all-users');
+  const userRes = await axios.get('https://devhub-hackathon-management-website.onrender.com/api/admin/all-users');
         setUsers(userRes.data);
       } catch (err) {
         setError('Failed to fetch data. You may not have admin privileges.');
