@@ -22,7 +22,7 @@ Hey there! 👋 This is a full-stack website built to run a hackathon, made with
 
 
 
-[Image of the Admin Dashboard]
+
 
 
 ## 🛠️ Tech Stack & Details
