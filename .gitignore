@@ -1,0 +1,12 @@
+# Ignore all node_modules folders
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Ignore all secret .env files
+.env
+client/.env
+server/.env
+
+# Ignore React's build output folder (for later)
+client/build/
