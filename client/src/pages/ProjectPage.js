@@ -203,6 +203,9 @@ function ProjectPage() {
                     placeholder="A short description of what your project does..."
                     rows={6}
                     size="lg"
+                    resize="vertical"
+                    maxH="300px"
+                    overflowY="auto"
                     _focus={{
                       borderColor: 'neon.cyan',
                       boxShadow: '0 0 0 1px rgba(0, 217, 255, 0.6)',
