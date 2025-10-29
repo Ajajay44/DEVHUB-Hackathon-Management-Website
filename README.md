@@ -76,3 +76,30 @@ npm install
 
 # Now, start the server!
 npm start
+
+Your backend API should now be running on http://localhost:5000.
+
+### 2. Get the Frontend Running :
+# Open a NEW terminal window/tab
+
+# Go into the client folder
+cd DEVHUB-Hackathon-Management-Website/client
+
+# Install all the frontend packages
+npm install
+
+# Start the React app!
+npm start
+
+Your browser should automatically open http://localhost:3000.
+
+3. Want Admin Access?
+To check out the /admin dashboard:
+
+* Sign up for a regular account on the website first.
+
+* Then, you'll need to manually change your role in the database. Go to MongoDB Atlas -> Browse Collections -> hackathondb -> users. Find your user, edit the document, and change the role field from "participant" to "admin" (or whatever case you used).
+
+* Log out of the website and log back in. Now you should be able to visit /admin!
+
+
