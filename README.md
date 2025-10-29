@@ -5,10 +5,10 @@ Hey there! 👋 This is a full-stack website built to run a hackathon, made with
 
 ## 🚀 Check it out Live!
 
-* **Frontend:** `[YOUR-NETLIFY-LINK.netlify.app]`
-* **Backend API:** `[YOUR-RENDER-API-LINK.onrender.com]`
+* **Frontend:** https://devhub-hackathon-management-website.netlify.app/
+* **Backend API:** https://devhub-hackathon-management-website.onrender.com/
 
-*(You'll need to deploy first to get these links!)*
+
 
 ## ✨ What it Can Do
 
