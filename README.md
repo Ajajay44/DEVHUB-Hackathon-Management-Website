@@ -1,3 +1,4 @@
+
 # DEVHUB: Hackathon Management Portal (MERN Stack)
 
 Hey there! 👋 This is a full-stack website built to run a hackathon, made with the **MERN** stack (MongoDB, Express, React, Node.js). It handles everything from getting users signed up and into teams, right through to submitting their projects for the judges.
@@ -7,7 +8,7 @@ Hey there! 👋 This is a full-stack website built to run a hackathon, made with
 * **Frontend:** `[YOUR-NETLIFY-LINK.netlify.app]`
 * **Backend API:** `[YOUR-RENDER-API-LINK.onrender.com]`
 
-
+*(You'll need to deploy first to get these links!)*
 
 ## ✨ What it Can Do
 
@@ -20,6 +21,8 @@ Hey there! 👋 This is a full-stack website built to run a hackathon, made with
 * **Judging Panel:** From the admin dashboard, admins can see tables of *all* registered users and *all* submitted projects (populated with team names via **Mongoose**), making it easy to review everything.
 
 
+
+[Image of the Admin Dashboard]
 
 
 ## 🛠️ Tech Stack & Details
@@ -76,7 +79,32 @@ npm install
 
 # Now, start the server!
 npm start
+````
 
-Your backend API should now be running on http://localhost:5000.
+Your backend API should now be running on `http://localhost:5000`.
 
+### 2\. Get the Frontend Running
+
+```bash
+# Open a NEW terminal window/tab
+
+# Go into the client folder
+cd DEVHUB-Hackathon-Management-Website/client
+
+# Install all the frontend packages
+npm install
+
+# Start the React app!
+npm start
+```
+
+Your browser should automatically open `http://localhost:3000`.
+
+### 3\. Want Admin Access?
+
+To check out the `/admin` dashboard:
+
+1.  Sign up for a regular account on the website first.
+2.  Then, you'll need to manually change your role in the database. Go to MongoDB Atlas -\> Browse Collections -\> `hackathondb` -\> `users`. Find your user, edit the document, and change the `role` field from `"participant"` to `"admin"` (or whatever case you used).
+3.  Log out of the website and log back in. Now you should be able to visit `/admin`\!
 
